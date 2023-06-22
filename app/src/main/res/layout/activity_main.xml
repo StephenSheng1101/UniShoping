@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Categories of Shop" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/cat1"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Mini Market"
+                android:background="@drawable/catround_corner"
+                android:layout_margin="10dp" />
+
+
+            <TextView
+                android:id="@+id/cat2"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:background="@drawable/catround_corner"
+                android:text="Health and Wellness Services"
+                android:layout_margin="10dp" />
+
+
+            <TextView
+                android:id="@+id/cat3"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:background="@drawable/catround_corner"
+                android:text="Printing / Book / Stationary Stop"
+                android:gravity="center"
+                android:layout_margin="10dp" />
+            <TextView
+                android:id="@+id/cat4"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:background="@drawable/catround_corner"
+                android:text="Tech Store"
+                android:layout_margin="10dp" />
+
+        </GridLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-3dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <Button
+                android:id="@+id/Filter_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_corner"
+                android:layout_gravity="bottom|right"
+                android:layout_weight="1"
+                android:text="Filter" />
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
